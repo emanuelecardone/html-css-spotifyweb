@@ -6,17 +6,88 @@
 }
 
 /* COMMON */
+
+/* Common styles */
 body{
     font-family: 'Montserrat', sans-serif;
+} 
+.col{
+    float: left;
+}
+
+/* Common sizes */
+.h-50{
+    height: 50%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.top-bottom-height{
+    height: 160px;
+}
+
+img{
+    width: 100%;
 }
 
 /* MAIN */
+main{
+    height: calc(100vh - 160px);
+}
+
+/* Left main */
+.left-main{
+    background-color: black;
+    width: 400px;
+}
+
+.main-logo-box{
+    display: flex;
+    align-items: center;
+}
+
+.main-logo{
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+    margin-left: 35px;
+}
+
+/* Right main */
+.right-main{
+    background-color: #141922;
+    width: calc(100% - 400px);
+}
+
+/* Fixed bar */
+.fixed-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 400px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* FOOTER */
+footer{
+    background-color: #282828;
+} 
+
+/* MEDIA QUERY (Desktop First) */
 
 /* TEST */
 div{
     border: 1px solid blue;
 }
-
+ 
 
