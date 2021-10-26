@@ -15,6 +15,15 @@ body{
     float: left;
 }
 
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* Common sizes */
 .h-50{
     height: 50%;
@@ -33,7 +42,7 @@ body{
 }
 
 .top-bottom-height{
-    height: 160px;
+    height: 130px;
 }
 
 img{
@@ -42,13 +51,23 @@ img{
 
 /* MAIN */
 main{
-    height: calc(100vh - 160px);
+    height: calc(100vh - 130px);
 }
 
 /* Left main */
 .left-main{
     background-color: black;
-    width: 400px;
+    width: 350px;
+    color: #6f6f6f;
+}
+
+.left-main > *:not(.left-main-actions-box){
+    margin-left: 30px;
+}
+
+.left-main img{
+    width: 40px;
+    margin-right: 10px;
 }
 
 .main-logo-box{
@@ -57,16 +76,36 @@ main{
 }
 
 .main-logo{
-    width: 60%;
-    min-width: 60%;
-    max-width: 60%;
-    margin-left: 35px;
+    width: 62%;
+    min-width: 62%;
+    max-width: 62%;
+}
+
+.left-main-actions li{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.left-main-actions li:first-child{
+    border-left: 4px solid #adff2f;
+    padding-left: 26px;
+}
+
+.home-logo, .user-logo{
+    filter: brightness(70%);
+}
+
+.search-logo, .library-logo{
+    filter: brightness(50%);
 }
 
 /* Right main */
 .right-main{
     background-color: #141922;
-    width: calc(100% - 400px);
+    width: calc(100% - 350px);
+    padding-top: 130px;
 }
 
 /* Fixed bar */
@@ -74,8 +113,23 @@ main{
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 400px);
+    width: calc(100% - 350px);
     background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+.upgrade{
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 18px 60px;
+    max-width: 50%;
 }
 
 /* FOOTER */
