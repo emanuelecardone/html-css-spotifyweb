@@ -67,6 +67,11 @@ main{
     display: flex;
     flex-flow: column nowrap;
     padding-bottom: 10px;
+    overflow-y: hidden;
+}
+
+.left-main *{
+    flex-shrink: 0;
 }
 
 .left-main > *:not(.left-main-actions-box){
@@ -83,7 +88,6 @@ main{
 .main-logo-box{
     display: flex;
     align-items: center;
-    
 }
 
 .main-logo{
@@ -153,6 +157,10 @@ h3{
 .playlists-box{
     padding-top: 30px;
     flex-grow: 1;
+    flex-shrink: 1;
+    overflow-y: auto;
+    min-height: 170px;
+
 }
 
 .playlists li{
@@ -192,7 +200,7 @@ hr{
     padding-top: 130px;
 }
 
-/* Fixed bar */
+/* FIXED BAR */
 .fixed-bar{
     position: fixed;
     top: 0;
