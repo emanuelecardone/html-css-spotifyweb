@@ -1,11 +1,11 @@
-/* RESET */
+/* -RESET- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* COMMON */
+/* -COMMON- */
 
 /* Common styles */
 body{
@@ -16,8 +16,12 @@ body{
 }
 
 a{
-    display: inline-block;
     text-decoration: none;
+    color: #6f6f6f;
+}
+
+a.btn{
+    display: inline-block;
 }
 
 ul{
@@ -49,22 +53,24 @@ img{
     width: 100%;
 }
 
-/* MAIN */
+/* -MAIN- */
 main{
     height: calc(100vh - 130px);
 }
 
-/* Left main */
+/* LEFT MAIN */
 .left-main{
     background-color: black;
     width: 350px;
-    color: #6f6f6f;
+    display: flex;
+    flex-flow: column nowrap
 }
 
 .left-main > *:not(.left-main-actions-box){
     margin-left: 30px;
 }
 
+/* Logo section */
 .left-main img{
     width: 40px;
     margin-right: 10px;
@@ -81,6 +87,7 @@ main{
     max-width: 62%;
 }
 
+/* Left main actions section*/
 .left-main-actions li{
     display: flex;
     align-items: center;
@@ -91,6 +98,11 @@ main{
 .left-main-actions li:first-child{
     border-left: 4px solid #adff2f;
     padding-left: 26px;
+    color: white;
+}
+
+.home-link{
+    color: white;
 }
 
 .home-logo, .user-logo{
@@ -101,7 +113,9 @@ main{
     filter: brightness(50%);
 }
 
-/* Right main */
+/* Playlists section */
+
+/* RIGHT MAIN */
 .right-main{
     background-color: #141922;
     width: calc(100% - 350px);
@@ -132,14 +146,14 @@ main{
     max-width: 50%;
 }
 
-/* FOOTER */
+/* -FOOTER- */
 footer{
     background-color: #282828;
 } 
 
-/* MEDIA QUERY (Desktop First) */
+/* -MEDIA QUERY (Desktop First)- */
 
-/* TEST */
+/* -TEST- */
 div{
     border: 1px solid blue;
 }
