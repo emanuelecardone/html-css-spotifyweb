@@ -10,6 +10,8 @@
 /* Common styles */
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
 } 
 .col{
     float: left;
@@ -66,6 +68,10 @@ main{
     flex-flow: column nowrap
 }
 
+.left-main > *{
+    margin-right: 30px;
+}
+
 .left-main > *:not(.left-main-actions-box){
     margin-left: 30px;
 }
@@ -79,12 +85,13 @@ main{
 .main-logo-box{
     display: flex;
     align-items: center;
+    
 }
 
 .main-logo{
-    width: 62%;
-    min-width: 62%;
-    max-width: 62%;
+    width: 65%;
+    min-width: 65%;
+    max-width: 65%;
 }
 
 /* Left main actions section*/
@@ -114,6 +121,41 @@ main{
 }
 
 /* Playlists section */
+.left-main h3{
+    color: white;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.create-playlists{
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.plus-container{
+    background-color: #a3a3a3;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.fa-plus{
+    font-size: 27.5px;
+}
+
+.playlists-box{
+    flex-grow: 1;
+}
+
+.playlists li{
+    margin-bottom: 25px;
+}
+
 
 /* RIGHT MAIN */
 .right-main{
@@ -134,7 +176,7 @@ main{
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .upgrade{
