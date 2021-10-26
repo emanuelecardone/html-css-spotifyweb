@@ -69,12 +69,9 @@ main{
     padding-bottom: 10px;
 }
 
-.left-main > *{
-    margin-right: 30px;
-}
-
 .left-main > *:not(.left-main-actions-box){
-    margin-left: 30px;
+    width: calc(100% - 60px);
+    margin: auto;
 }
 
 /* Logo section */
@@ -96,6 +93,10 @@ main{
 }
 
 /* Left main actions section*/
+.left-main-actions{
+    margin-right: 30px;
+}
+
 .left-main-actions li{
     display: flex;
     align-items: center;
@@ -123,8 +124,8 @@ main{
 
 /* Playlists section */
 h3{
+    padding: 15px 0;
     color: white;
-    margin: 15px 0;
     text-transform: uppercase;
 }
 
@@ -150,6 +151,7 @@ h3{
 }
 
 .playlists-box{
+    padding-top: 30px;
     flex-grow: 1;
 }
 
@@ -221,8 +223,8 @@ footer{
 /* -MEDIA QUERY (Desktop First)- */
 
 /* -TEST- */
-/* div{
+div{
     border: 1px solid blue;
 }
-  */
+  
 
