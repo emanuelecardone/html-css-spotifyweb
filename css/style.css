@@ -17,12 +17,14 @@ body{
     float: left;
 }
 
-a, .suggestions-container span{
+a, 
+.suggestions-container span,
+.left-footer *:not(h4){
     text-decoration: none;
     color: #6f6f6f;
 }
 
-a{
+a.btn{
     display: inline-block;
 }
 
@@ -240,7 +242,7 @@ hr{
 }
 
 h2{
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
     margin-bottom: 10px;
 }
@@ -302,13 +304,116 @@ h2{
 /* -FOOTER- */
 footer{
     background-color: #282828;
-} 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.left-footer i,
+.right-footer i{
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+/* Left footer */
+.left-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    max-width: 30%; 
+}
+
+.left-footer span{
+    font-size: 0.8em;
+}
+
+h4{
+    color: white;
+    line-height: 10px;
+}
+
+.current-song{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 0;
+    margin-right: 30%;
+}
+
+.favorites{
+    flex-shrink: 0;
+}
+
+.footer-img-box{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/sinister.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+/* Middle footer */
+.middle-footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0 20px;
+    width: calc(40% - 20px);
+    max-width: calc(40% - 20px);
+    color: white;
+}
+
+.icons-row{
+    display: flex;
+    flex-shrink: 0;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.icons-row i:not(.fa-play-circle){
+    transform: scale(1.3);
+    margin: 0 20px;
+}
+
+.fa-play-circle{
+    margin: 0 40px;
+    transform: scale(2.6);
+}
+
+.duration-row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.empty-bar{
+    height: 5px;
+    width: 100px;
+    background-color: #6f6f6f;
+    margin: 0 20px;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+.white-bar{
+    height: 100%;
+    width: 23%;
+    background-color: white;
+    border-radius: 25px;
+}
 
 /* -MEDIA QUERY (Desktop First)- */
 
 /* -TEST- */
 /* div, nav{
     border: 1px solid blue;
-}  */
+}   */
 
 
