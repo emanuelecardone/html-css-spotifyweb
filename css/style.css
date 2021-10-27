@@ -211,7 +211,6 @@ hr{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    width: 750px; /* ho dato questa width fissa per far si che il breakpoint coincida col 100% di questo menù, come da video (1100 - 350) */
     margin: auto;
     padding: 25px 0;
 }
@@ -219,8 +218,13 @@ hr{
 .top-menu{
     display: flex;
     flex-shrink: 0;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1.5%;
+    font-size: 0.9em;
+}
+
+.top-menu li:not(:first-child){
+    margin-left: 20px;
 }
 
 .lime-underline{
