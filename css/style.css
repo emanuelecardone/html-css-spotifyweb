@@ -267,6 +267,10 @@ h2{
     font-size: 20px;
 }
 
+.circle-img{
+    border-radius: 50%;
+}
+
 /* FIXED BAR */
 .fixed-bar{
     position: fixed;
