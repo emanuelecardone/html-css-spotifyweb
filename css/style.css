@@ -11,13 +11,13 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 1.1em;
+    
 } 
 .col{
     float: left;
 }
 
-a{
+a, .suggestions-container span{
     text-decoration: none;
     color: #6f6f6f;
 }
@@ -127,7 +127,7 @@ main{
 }
 
 /* Playlists section */
-h3{
+.playlists-title-container h3{
     padding: 15px 0;
     color: white;
     text-transform: uppercase;
@@ -168,6 +168,10 @@ h3{
 }
 
 /* Install section */
+.install-link{
+    padding-top: 15px;
+}
+
 .install-link, .user-box{
     display: flex;
     align-items: center;
@@ -178,7 +182,7 @@ h3{
 }
 
 hr{
-    margin: 20px 0 25px;
+    margin: 15px 0 20px;
     border-color: #4a4a4a;
 }
 
@@ -198,6 +202,69 @@ hr{
     background-color: #141922;
     width: calc(100% - 350px);
     padding-top: 130px;
+    overflow-y: auto;
+}
+
+/* Top menu section */
+.top-menu-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 750px; /* ho dato questa width fissa per far si che il breakpoint coincida col 100% di questo menù, come da video (1100 - 350) */
+    margin: auto;
+    padding: 25px 0;
+}
+
+.top-menu{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding: 0 1.5%;
+}
+
+.lime-underline{
+    padding-bottom: 4px;
+    border-bottom: 2px solid #adff2f;
+}
+
+/* Suggestions section */
+.suggestions-container{
+    margin: 0 30px 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.suggestions-row{
+    display: flex;
+    
+}
+
+.suggestions-title-box{
+    margin: 45px 0 40px;
+}
+
+.suggestions-box{
+    margin-right: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+    text-align: center;
+    width: calc((100% / 6) - 2% );
+}
+
+.suggestions-box h3{
+    color: white;
+    margin: 20px auto 10px;
+    max-width: 100%;
+    font-size: 20px;
 }
 
 /* FIXED BAR */
@@ -221,6 +288,7 @@ hr{
     border: 1px solid white;
     border-radius: 35px;
     padding: 18px 60px;
+    margin-right: 15px; /* Per non farlo sovrapporre con la scrollbar */
 }
 
 /* -FOOTER- */
@@ -231,8 +299,8 @@ footer{
 /* -MEDIA QUERY (Desktop First)- */
 
 /* -TEST- */
-div{
+/* div, nav{
     border: 1px solid blue;
-}
-  
+}  */
+
 
