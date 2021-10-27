@@ -210,6 +210,10 @@ hr{
     width: 80px;
 }
 
+.parallel-aside img{
+    cursor: pointer;
+}
+
 /* RIGHT MAIN */
 .right-main{
     background-color: #141922;
@@ -524,6 +528,11 @@ a.btn:hover{
 
 .create-playlists:hover .plus-container{
     background-color: white;
+}
+
+/* Parallel aside hover */
+.parallel-aside img:not(.user-logo):hover{
+    filter: brightness(100%);
 }
 
 /* Footer hover */
