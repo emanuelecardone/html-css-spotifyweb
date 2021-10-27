@@ -19,7 +19,7 @@ body{
 
 a, 
 .suggestions-container span,
-.left-footer *:not(h4){
+.left-footer *{
     text-decoration: none;
     color: #6f6f6f;
 }
@@ -311,32 +311,30 @@ footer{
 
 .left-footer i,
 .right-footer i{
-    margin-left: 20px;
     font-size: 1.3em;
 }
 
 /* Left footer */
 .left-footer{
     display: flex;
+    width: 320px;
     max-width: 30%;
     align-items: center;
-    background-color: red;
 }
 
 .left-footer-row{
-    background-color: yellow;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 15px;
 }
 
 .left-footer span{
     font-size: 0.8em;
 }
 
-h4{
+.left-footer h4{
     color: white;
     line-height: 10px;
 }
@@ -346,18 +344,17 @@ h4{
     align-items: center;
     align-content: center;
     flex-shrink: 0;
-    margin-right: 40%;
+    
 }
 
 .favorites{
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    flex-shrink: 0;
-    background-color: aqua;
 }
 
-.left-footer .fa-heart{
-    margin-left: 0;
+.left-footer .fa-folder{
+    margin-left: 20px;
 }
 
 .footer-img-box{
@@ -442,6 +439,10 @@ h4{
     color: white;
     max-width: 30%;
     flex-shrink: 0;
+}
+
+.right-footer i{
+    margin-left: 20px;
 }
 
 .right-footer .empty-bar{
