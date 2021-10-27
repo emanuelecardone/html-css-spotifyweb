@@ -58,6 +58,7 @@ img{
 /* -MAIN- */
 main{
     height: calc(100vh - 130px);
+    overflow-y: hidden; 
 }
 
 /* LEFT MAIN */
@@ -67,7 +68,6 @@ main{
     display: flex;
     flex-flow: column nowrap;
     padding-bottom: 10px;
-    overflow-y: hidden;
 }
 
 .left-main *{
@@ -280,6 +280,7 @@ h2{
     align-items: center;
     padding-right: 10px;
     font-size: 1.2em;
+    
 }
 
 .upgrade{
