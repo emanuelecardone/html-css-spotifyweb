@@ -99,9 +99,9 @@ main{
 }
 
 /* Left main actions section*/
-.left-main-actions{
+/* .left-main-actions{
     margin-right: 30px;
-}
+} */
 
 .left-main-actions li{
     display: flex;
@@ -644,6 +644,18 @@ footer .fa-play-circle:hover{
 
     h2{
         font-size: 2em;
+    }
+
+    .left-main > *:not(.left-main-actions-box){
+        margin: 0 15px;
+    }
+
+    .left-main-actions li{
+        padding-left: 15px;
+    }
+    
+    .left-main-actions li:first-child{
+        padding-left: 11px;
     }
 }
 
