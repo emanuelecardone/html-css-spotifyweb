@@ -581,11 +581,21 @@ footer .fa-play-circle:hover{
     .top-menu{
         flex-wrap: wrap;
         justify-content: center;
-        width: 88%;
+        width: 100%;
+        max-width: 710px;
     }
 
     .top-menu li{
         line-height: 40px;
+    }
+
+    .left-main{
+        width: 270px;
+    }
+
+    .fixed-bar,
+    .right-main{
+        width: calc(100% - 270px);
     }
 }
 
@@ -612,6 +622,28 @@ footer .fa-play-circle:hover{
 
     footer{
         overflow: hidden;
+    }
+
+    .left-main{
+        width: 210px;
+    }
+
+    .fixed-bar,
+    .right-main{
+        width: calc(100% - 210px);
+    }
+
+    .plus-container{
+        width: 35px;
+        height: 35px;
+    }
+
+    .fa-plus{
+        font-size: 17.5px;
+    }
+
+    h2{
+        font-size: 2em;
     }
 }
 
