@@ -314,7 +314,7 @@ h2{
 .overlay .fa-play-circle{
     color: white;
     position: absolute; 
-    font-size: 6em;
+    font-size: 5em;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
