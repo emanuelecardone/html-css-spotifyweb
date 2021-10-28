@@ -337,11 +337,11 @@ h2{
 }
 
 .upgrade{
-    font-weight: bold;
+    font-size: 17px;
     color: white;
     border: 1px solid white;
     border-radius: 35px;
-    padding: 18px 60px;
+    padding: 18px 50px;
     margin-right: 15px; /* Per non farlo sovrapporre con la scrollbar */
 }
 
@@ -597,6 +597,11 @@ footer .fa-play-circle:hover{
     .right-main{
         width: calc(100% - 270px);
     }
+
+    .upgrade{
+        font-size: 16px;
+        padding: 16px 40px;
+    }
 }
 
 /* Small size */
@@ -656,6 +661,11 @@ footer .fa-play-circle:hover{
     
     .left-main-actions li:first-child{
         padding-left: 11px;
+    }
+
+    .upgrade{
+        font-size: 14px;
+        padding: 14px 30px;
     }
 }
 
@@ -718,6 +728,11 @@ footer .fa-play-circle:hover{
 
     .top-menu{
         width: 100%;
+    }
+
+    .upgrade{
+        font-size: 14px;
+        padding: 14px 25px;
     }
 }
     
