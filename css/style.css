@@ -314,7 +314,7 @@ h2{
 .overlay .fa-play-circle{
     color: white;
     position: absolute; 
-    font-size: 5em;
+    font-size: 4.5vw; /* per farlo sempre adattare alla viewport e far si che non sia troppo grande e copra le immagini */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -602,6 +602,10 @@ footer .fa-play-circle:hover{
         font-size: 16px;
         padding: 16px 40px;
     }
+
+    .overlay .fa-play-circle{
+        font-size: 6.5vw; 
+    }
 }
 
 /* Small size */
@@ -666,6 +670,10 @@ footer .fa-play-circle:hover{
     .upgrade{
         font-size: 14px;
         padding: 14px 30px;
+    }
+
+    .overlay .fa-play-circle{
+        font-size: 10vw; 
     }
 }
 
@@ -733,6 +741,10 @@ footer .fa-play-circle:hover{
     .upgrade{
         font-size: 14px;
         padding: 14px 25px;
+    }
+
+    .overlay .fa-play-circle{
+        font-size: 12vw; 
     }
 }
     
