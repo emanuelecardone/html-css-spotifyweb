@@ -675,6 +675,19 @@ footer .fa-play-circle:hover{
     .overlay .fa-play-circle{
         font-size: 10vw; 
     }
+
+    .right-footer{
+        flex-shrink: 1;
+    }
+
+    .right-footer .empty-bar{
+        min-width: 50%; 
+    }
+
+    .right-footer i{
+        margin-left: 10px;
+        font-size: 1em;
+    }
 }
 
 /* Extra small size */
@@ -745,6 +758,10 @@ footer .fa-play-circle:hover{
 
     .overlay .fa-play-circle{
         font-size: 12vw; 
+    }
+
+    .right-footer i:not(.fa-volume-up){
+        display: none;
     }
 }
     
